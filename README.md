@@ -2,7 +2,7 @@
 
 ## Resolução de Problemas
 
-Problemas identificados no projeto. Aqui está um resumo das correções implementadas:
+Problemas identificados no projeto. Aqui está um resumo das correções implementadas antes de add um banco de dados:
 
 ### Index
 1. O atributo `action` foi adicionado ao formulário para especificar para onde os dados devem ser enviados.
