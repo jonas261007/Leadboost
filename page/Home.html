@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+  <title>Home</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/menu-geral.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.4/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light custom-navbar">
+    <div class="container">
+      <img src="../img/LOGO-PROJETO.png" alt="Logo" class="logo">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="home">
+              <i class="bi bi-house-door text-black"></i> <b>Home</b>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="funcionarios.html">
+              <i class="bi bi-person"></i> Funcionários
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="administrador.html">
+              <i class="bi bi-shield-lock"></i> Administrador
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html" id="logoutButton">
+              <i class="bi bi-box-arrow-right"></i> Sair
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container mt-4 d-flex justify-content-between search-ajuste">
+    <div class="container d-flex justify-content-end gap p-2 btn-ajuste">
+      <a class="btn btn-primary  col-sm-2 mx-2" href="../page/form.html" target="_blank">Cadastro aluno</a>
+      <a class="btn btn-primary col-sm-2" href="https://www.exemplo.com/arquivo.zip" download>Baixar</a>
+      <div class="input-group mx-5">
+        <input type="text" class="form-control col-sm-5" placeholder="Pesquisar..." />
+        <button class="btn btn-primary col-2" type="button">Pesquisar</button>
+      </div>
+    </div>
+  </section>
+
+  <main class="container w-100 pt-5 table-responsive">
+    <table id="example" class="table table-striped table-width">
+      <thead class="thead-main">
+        <tr>
+          <th>Nome</th>
+          <th>DDD</th>
+          <th>Telefone</th>
+          <th>Cidade</th>
+          <th>Bairro</th>
+          <th>Curso</th>
+          <th>Forma de ingresso?</th>
+          <th>Semestre</th>
+          <th>Como nos conheceu?</th>
+          <th>Observação candidato</th>
+          <th>Termo aceito?</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Maria Silva</td>
+          <td>81</td>
+          <td>98765-4321</td>
+          <td>Recife</td>
+          <td>Boa Viagem</td>
+          <td>Engenharia Civil</td>
+          <td>Vestibular</td>
+          <td>2024.1</td>
+          <td>Amigos</td>
+          <td>N/A</td>
+          <td>Sim</td>
+          <td>
+            <button class="btn-edit ">Editar</button>
+            <button class="btn-save" style="display:none;">Salvar</button>
+            <button class="btn-cancel mt-2" style="display:none;">Cancelar</button>
+            <button class="btn-delete mt-2">Excluir</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Carlos Santos</td>
+          <td>81</td>
+          <td>91234-5678</td>
+          <td>Recife</td>
+          <td>Imbiribeira</td>
+          <td>Administração</td>
+          <td>ENEM</td>
+          <td>2024.1</td>
+          <td>Internet</td>
+          <td>N/A</td>
+          <td>Sim</td>
+          <td>
+            <button class="btn-edit ">Editar</button>
+            <button class="btn-save" style="display:none;">Salvar</button>
+            <button class="btn-cancel mt-2" style="display:none;">Cancelar</button>
+            <button class="btn-delete mt-2">Excluir</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Maria Silva</td>
+          <td>81</td>
+          <td>98765-4321</td>
+          <td>Recife</td>
+          <td>Boa Viagem</td>
+          <td>Engenharia Civil</td>
+          <td>Vestibular</td>
+          <td>2024.1</td>
+          <td>Amigos</td>
+          <td>N/A</td>
+          <td>Sim</td>
+          <td>
+            <button class="btn-edit ">Editar</button>
+            <button class="btn-save" style="display:none;">Salvar</button>
+            <button class="btn-cancel mt-2" style="display:none;">Cancelar</button>
+            <button class="btn-delete mt-2">Excluir</button>
+          </td>
+        </tr>
+        <tr>
+          <td>João Santos</td>
+          <td>82</td>
+          <td>98765-4322</td>
+          <td>Recife</td>
+          <td>Pina</td>
+          <td>Medicina</td>
+          <td>Vestibular</td>
+          <td>2024.1</td>
+          <td>Amigos</td>
+          <td>N/A</td>
+          <td>Sim</td>
+          <td>
+            <button class="btn-edit ">Editar</button>
+            <button class="btn-save" style="display:none;">Salvar</button>
+            <button class="btn-cancel mt-2" style="display:none;">Cancelar</button>
+            <button class="btn-delete mt-2">Excluir</button>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </main>
+
+  <footer class="footer text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p>&copy; www.teamBoost.com.br</p>
+        </div>
+        <div class="col-md-6 text-md-right">
+          <p>Suporte: Leadboost.team@gmail.com</p>
+        </div>
+        <div class="col-md-12 text-md-right">
+          <p>Contato: 81 9999-6666</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+<script>
+  $(document).ready(function () {
+    // Botão Editar
+    $(".btn-edit").click(function () {
+      var row = $(this).closest("tr");
+      row.find("td:not(:last-child)").each(function () {
+        var content = $(this).text();
+        $(this).html('<input type="text" value="' + content + '">');
+      });
+      row.find(".btn-edit, .btn-delete").hide();
+      row.find(".btn-save, .btn-cancel").show();
+    });
+
+    // Botão Cancelar
+    $(".btn-cancel").click(function () {
+      var row = $(this).closest("tr");
+      row.find("td:not(:last-child) input").each(function () {
+        var content = $(this).val();
+        $(this).parent().text(content);
+      });
+      row.find(".btn-edit, .btn-delete").show();
+      row.find(".btn-save, .btn-cancel").hide();
+    });
+
+    // Botão Salvar
+    $(".btn-save").click(function () {
+      var row = $(this).closest("tr");
+      // Aqui, você pode pegar os valores dos campos editados e fazer algo com eles.
+      // Por exemplo, você pode enviá-los para o servidor para salvar no banco de dados.
+      // Após o salvamento bem-sucedido, volte ao modo de visualização.
+      row.find(".btn-edit, .btn-delete").show();
+      row.find(".btn-save, .btn-cancel").hide();
+    });
+
+    // Botão Excluir
+    $(".btn-delete").click(function () {
+      var row = $(this).closest("tr");
+      // Aqui, você pode adicionar a lógica para confirmar a exclusão ou excluir imediatamente.
+      row.remove();
+    });
+  });
+</script>
+
+</html>
