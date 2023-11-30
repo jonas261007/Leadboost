@@ -1,4 +1,4 @@
-// Home - Cadastro dos alunos
+// Home - Onde mostra o cadastro dos alunos
 
 // Espera o carregamento do documento HTML
 document.addEventListener("DOMContentLoaded", function () {
@@ -28,12 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
           <td>${data.conheceu}</td>
           <td>${data.observacoes}</td>
           <td>${data.aceitarTermos ? 'Sim' : 'Não'}</td>
-          <td>
-            <button class="btn-edit">Editar</button>
-            <button class="btn-save" style="display:none;">Salvar</button>
-            <button class="btn-cancel mt-2" style="display:none;">Cancelar</button>
-            <button class="btn-delete mt-2">Excluir</button>
-          </td>
         `;
       });
     });

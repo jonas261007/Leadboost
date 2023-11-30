@@ -15,7 +15,7 @@
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
   <script src="../banco/firebase-config.js"></script>
-  <script src="../banco/firebase-data.js"></script>
+  <script src="../banco/home.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
 </head>
 
@@ -82,7 +82,6 @@
           <th>Como nos conheceu?</th>
           <th>Observação candidato</th>
           <th>Termo aceito?</th>
-          <th>Ações</th>
         </tr>
       </thead>
       <tbody>
@@ -123,7 +122,7 @@
     // Obtenha os dados da tabela
     var table = document.getElementById("example");
     var data = [];
-    for (var i = 1, row; row = table.rows[i]; i++) {
+    for (var i = 0, row; row = table.rows[i]; i++) {
       var rowData = [];
       for (var j = 0, col; col = row.cells[j]; j++) {
         rowData.push(col.innerText);
